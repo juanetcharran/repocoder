@@ -1,0 +1,276 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    width: 100%;
+}
+
+/* cambiar, fue la única manera que encontré de separar los items */
+.item{
+    margin-right: 150px;
+
+}
+/* flex-grow para que ocupe toda la pantalla*/
+.navigation{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+
+.imagen{
+    width: 50%;
+}
+
+h1{
+    text-align: center;
+    color:black
+}
+
+.carousel-container {
+    width: 100%; /* ancho */
+    height: 400px; /* altura */
+    overflow: hidden; /* si tengo varias imágenes, se ve una sola y no el resto */
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fade 12s infinite; /* cantidad de tiempo que en el que giran las fotos y cuánto se repite */
+}
+
+.carousel img:nth-child(1) { animation-delay: 0s; }
+.carousel img:nth-child(2) { animation-delay: 4s; }
+.carousel img:nth-child(3) { animation-delay: 8s; }
+
+@keyframes fade {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+.item a{
+    color: whitesmoke;
+    text-decoration:none;
+}
+.informacion{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.datos{
+    flex-grow: 1; /* todos los elementos de clase .datos ocupan toda la pantalla y todos aumentan de la misma manera */
+    text-align: left;
+    border: solid black 3px;
+    margin-right: 1px;
+}
+.datos h2{
+    text-align: center;
+}
+.datos a {
+    text-decoration: none; 
+    color: inherit; 
+}
+/* cómo centrar el botón */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.carousel-button a{
+    color:whitesmoke;
+    text-decoration:none;
+}
+.datos{
+    text-decoration:none;
+}
+footer .redes .hashtag {
+    font-size: 24px;
+    color: #fff;
+}
+footer {
+    background-color: #000000;
+    color: #fff;
+    height: 108px;
+    line-height: 108px;
+    padding: 0 30px;
+    
+}
+
+footer .redes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: initial;
+    text-align: left;
+    padding: 0 30px;
+   
+}
+footer {
+    background-color: #000000;
+    color: #fff;
+    height: 108px;
+    line-height: 108px;
+    padding: 0 30px;
+    
+}
+
+/* Íconos */
+
+footer .redes ul>li a.icon {
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    display: block;
+    color: white; /* Hace que los íconos sean blancos */
+    font-size: 24px; /* Ajusta el tamaño de los íconos */
+    text-align: center; /* Alinea el ícono dentro del enlace */
+}
+
+footer .redes ul>li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    display: inline-block; /* Asegura que los íconos se comporten como un bloque */
+}
+
+footer .redes ul>li a.icon-facebook {
+    background: url('facebook-icon.png') no-repeat center center;
+}
+
+footer .redes ul>li a.icon-instagram {
+    background: url('instagram-icon.png') no-repeat center center;
+}
+
+footer .redes ul>li a.icon-twitter {
+    background: url('twitter-icon.png') no-repeat center center;
+}
+
+.tituloquienessomos{
+    font-size: 40px;
+}
+#fotocc{
+    height: 100%; /* Asegura que el body ocupe toda la altura de la pantalla */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    width: 50%; /* La imagen ocupa el 50% del ancho de la pantalla */
+    margin-left: 25%;
+}
+.texto-imagen{
+    height: 100%; /* Asegura que el body ocupe toda la altura de la pantalla */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    width: 50%; /* La imagen ocupa el 50% del ancho de la pantalla */
+    margin-left: 25%;  
+}
+
+.parrafo{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.titulo2{
+    text-transform: capitalize;
+}
+
+.separator {
+    border-top: 2px dotted #000; /* Línea punteada de 2px de grosor y color negro */
+    margin: 20px 0; /* Agregar un margen para separarlo de otros elementos */
+  }
+
+  .arteydanza {
+    padding: 20px;
+  }
+  
+  /* Contenedor de la lista de talleres */
+  .arteydanza ul {
+    display: flex; /* Usa flexbox para alinear los elementos en fila */
+    justify-content: space-around; /* Espacio entre los elementos de la lista */
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+  }
+  
+  /* Estilos para cada taller */
+  .arteydanza .talleres {
+    width: 30%; /* Define el ancho de cada taller */
+    text-align: center; /* Centra el contenido dentro de cada taller */
+  }
+  
+  /* Asegura que las imágenes dentro de los talleres no se desborden */
+  .arteydanza .talleres img {
+    width: 100%; /* Hace que las imágenes ocupen todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+.h1talleres{
+    padding-top: 30px;
+    font-size: 50px;
+}
+
+.eventos{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    margin-left: 25%;
+}
+
+.fotoseventos{
+    width: 100%;
+
+}
+
+.eventos > div{
+    display: flex; /* Utiliza flexbox para alinear los elementos en fila */
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente los elementos */
+    border: solid black 3px;
+   
+}
+
+.imagenevento{
+    width: 100%;
+}
+
+.parrafoeventos h2{
+    text-align: center;
+    background-color: #fff;
+}
+
+.parrafoeventos p{
+    text-align: justify;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+}
+
+
