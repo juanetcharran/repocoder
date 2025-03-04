@@ -33,29 +33,11 @@
 h1{
     text-align: center;
     color:black
+    padding-top 30px;
+    font-size: 40px;
 }
 
-.carousel-container {
-    width: 100%; /* ancho */
-    height: 400px; /* altura */
-    overflow: hidden; /* si tengo varias imágenes, se ve una sola y no el resto */
-    position: relative;
-}
 
-.carousel img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    animation: fade 12s infinite; /* cantidad de tiempo que en el que giran las fotos y cuánto se repite */
-}
-
-.carousel img:nth-child(1) { animation-delay: 0s; }
-.carousel img:nth-child(2) { animation-delay: 4s; }
-.carousel img:nth-child(3) { animation-delay: 8s; }
 
 @keyframes fade {
     0% { opacity: 0; }
@@ -69,51 +51,11 @@ h1{
     color: whitesmoke;
     text-decoration:none;
 }
-.informacion{
-    display: flex;
-    flex-direction: row;
-}
 
 
-.datos{
-    flex-grow: 1; /* todos los elementos de clase .datos ocupan toda la pantalla y todos aumentan de la misma manera */
-    text-align: left;
-    border: solid black 3px;
-    margin-right: 1px;
-}
-.datos h2{
-    text-align: center;
-}
-.datos a {
-    text-decoration: none; 
-    color: inherit; 
-}
 /* cómo centrar el botón */
-.carousel-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 12px 24px;
-    font-size: 18px;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
 
-.carousel-button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-.carousel-button a{
-    color:whitesmoke;
-    text-decoration:none;
-}
-.datos{
-    text-decoration:none;
-}
+
 footer .redes .hashtag {
     font-size: 24px;
     color: #fff;
@@ -231,10 +173,7 @@ footer .redes ul>li a.icon-twitter {
     height: auto; /* Mantiene la proporción de la imagen */
   }
   
-.h1talleres{
-    padding-top: 30px;
-    font-size: 50px;
-}
+
 
 .eventos{
     display: flex;
@@ -273,4 +212,47 @@ footer .redes ul>li a.icon-twitter {
     background-color: white;
 }
 
+.formaparte{
+    margin-left: 25%;
+    justify-content: center;
+    border: solid black 3px;
+    width: 50%;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
+.h1talleres{
+    font-size: 40px;
+}
+.dejatumensaje{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 25%;
+    width: 50%;
+border: solid black 3px;
+font-size: 30px;
+}
+.label{
+    color: white;
+    background-color: #000;
+    width:100%;
+    display: flex;
+    font-size: 20px;
+}
+
+.input{
+    color: black;
+    background-color: white;
+    width:90%;
+    display: flex;
+    font-size: 20px;
+    border: none;
+
+}
+
+.boton-mensaje{
+    color: #fff;
+    background-color: #000;
+    font-size: 15px;
+}
