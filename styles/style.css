@@ -36,7 +36,7 @@
     width: 50%;
 }
 
-h1{
+.generic-tittle{
     text-align: center;
     color:black
     padding-top 30px;
@@ -74,6 +74,7 @@ h1{
 .icons{
     list-style: none;
     color: white;
+    text-decoration: none;
 }
 
 .redes{
@@ -115,29 +116,16 @@ h1{
     margin: 20px 0; /* Agregar un margen para separarlo de otros elementos */
   }
 
-  .arteydanza {
-    padding: 20px;
-  }
+/* Nuestros talleres */
   
-  /* Contenedor de la lista de talleres */
-  .arteydanza ul {
-    display: flex; /* Usa flexbox para alinear los elementos en fila */
-    justify-content: space-around; /* Espacio entre los elementos de la lista */
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el padding por defecto */
-  }
-  
-  /* Estilos para cada taller */
-  .arteydanza .talleres {
-    width: 30%; /* Define el ancho de cada taller */
-    text-align: center; /* Centra el contenido dentro de cada taller */
-  }
-  
-  /* Asegura que las imágenes dentro de los talleres no se desborden */
-  .arteydanza .talleres img {
-    width: 100%; /* Hace que las imágenes ocupen todo el ancho disponible */
-    height: auto; /* Mantiene la proporción de la imagen */
-  }
+.card h5 {
+    font-weight: bold;
+}
+
+.card p {
+    text-align: justify;
+}
+
   
 
 
