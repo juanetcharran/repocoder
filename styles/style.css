@@ -10,6 +10,12 @@
     width: 100%;
 }
 
+.actividades .carousel-item img {
+    max-height: 500px;
+    width: 100%; 
+    object-fit: cover;
+    }
+
 /* cambiar, fue la única manera que encontré de separar los items */
 .item{
     margin-right: 150px;
@@ -53,68 +59,28 @@ h1{
 }
 
 
-/* cómo centrar el botón */
+/* footer */
 
-
-footer .redes .hashtag {
-    font-size: 24px;
-    color: #fff;
-}
-footer {
-    background-color: #000000;
-    color: #fff;
-    height: 108px;
-    line-height: 108px;
-    padding: 0 30px;
-    
-}
-
-footer .redes {
+.footer{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    line-height: initial;
-    text-align: left;
-    padding: 0 30px;
-   
-}
-footer {
-    background-color: #000000;
-    color: #fff;
-    height: 108px;
-    line-height: 108px;
-    padding: 0 30px;
-    
+    flex-direction: row;
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-/* Íconos */
-
-footer .redes ul>li a.icon {
-    width: 32px;
-    height: 32px;
-    background-size: 32px 32px;
-    display: block;
-    color: white; /* Hace que los íconos sean blancos */
-    font-size: 24px; /* Ajusta el tamaño de los íconos */
-    text-align: center; /* Alinea el ícono dentro del enlace */
+.icons{
+    list-style: none;
+    color: white;
 }
 
-footer .redes ul>li a {
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    display: inline-block; /* Asegura que los íconos se comporten como un bloque */
+.redes{
+    padding: 10px 10px 10px 10px;
 }
 
-footer .redes ul>li a.icon-facebook {
-    background: url('facebook-icon.png') no-repeat center center;
-}
-
-footer .redes ul>li a.icon-instagram {
-    background: url('instagram-icon.png') no-repeat center center;
-}
-
-footer .redes ul>li a.icon-twitter {
-    background: url('twitter-icon.png') no-repeat center center;
-}
+/* fin del footer */
 
 .tituloquienessomos{
     font-size: 40px;
@@ -222,8 +188,8 @@ footer .redes ul>li a.icon-twitter {
     margin-bottom: 10px;
 }
 
-.h1talleres{
-    font-size: 40px;
+.generic-tittle{
+    font-size: 30px;
 }
 .dejatumensaje{
     text-align: center;
