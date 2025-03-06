@@ -1,67 +1,22 @@
-.header{
-    display: flex;
-    flex-direction: row;
-    width: 100%
-}
-.menu{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    width: 100%;
-}
-
 .actividades .carousel-item img {
     max-height: 500px;
-    width: 100%; 
-    object-fit: cover;
-    }
-
-/* cambiar, fue la única manera que encontré de separar los items */
-.item{
-    margin-right: 150px;
-
-}
-/* flex-grow para que ocupe toda la pantalla*/
-.navigation{
-    display: flex;
-    background-color: black;
-    align-items: center;
     width: 100%;
-    justify-content: space-between;
-
-
+    object-fit: cover;
 }
 
-.imagen{
-    width: 50%;
-}
 
-.generic-tittle{
+/* h1 para todos los html */
+
+.generic-tittle {
     text-align: center;
-    color:black
-    padding-top 30px;
+    color: black padding-top 30px;
     font-size: 40px;
-}
-
-
-
-@keyframes fade {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    30% { opacity: 1; }
-    40% { opacity: 0; }
-    100% { opacity: 0; }
-}
-
-.item a{
-    color: whitesmoke;
-    text-decoration:none;
 }
 
 
 /* footer */
 
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -71,13 +26,13 @@
     padding: 10px;
 }
 
-.icons{
+.icons {
     list-style: none;
     color: white;
     text-decoration: none;
 }
 
-.redes{
+.redes {
     padding: 10px 10px 10px 10px;
 }
 
@@ -85,28 +40,32 @@
 
 /* quienes somos */
 
-#fotocc{
+#fotocc {
     max-height: 500px;
     object-fit: cover;
-    display: flex; 
-    justify-content: center; 
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 50%; 
+    width: 50%;
     margin-left: 25%;
 }
-.texto-imagen{
-    height: 100%; /* Asegura que el body ocupe toda la altura de la pantalla */
-    margin: 0; /* Elimina los márgenes predeterminados */
-    width: 50%; /* La imagen ocupa el 50% del ancho de la pantalla */
-    margin-left: 25%;  
+
+.texto-imagen {
+    height: 100%;
+    /* Asegura que el body ocupe toda la altura de la pantalla */
+    margin: 0;
+    /* Elimina los márgenes predeterminados */
+    width: 50%;
+    /* La imagen ocupa el 50% del ancho de la pantalla */
+    margin-left: 25%;
 }
 
-.parrafo{
+.parrafo {
     font-size: 12px;
     text-align: justify;
 }
 
-.titulo2{
+.titulo2 {
     text-transform: capitalize;
     font-size: 20px;
     font-weight: bold;
@@ -114,12 +73,15 @@
 }
 
 .separator {
-    border-top: 2px dotted #000; /* Línea punteada de 2px de grosor y color negro */
-    margin: 20px 0; /* Agregar un margen para separarlo de otros elementos */
-  }
+    border-top: 2px dotted #000;
+    /* Línea punteada de 2px de grosor y color negro */
+    margin: 20px 0;
+    /* Agregar un margen para separarlo de otros elementos */
+}
 
+/* logro que ocupe la totalidad de la pantalla horizontal para mobile */
 
-@media (max-width: 776px) {
+@media (max-width: 767px) {
     .texto-imagen {
         display: flex;
         flex-direction: column;
@@ -127,9 +89,10 @@
         margin-left: 0%;
         padding: 10px;
     }
-}    
+}
+
 /* fotocc está ok */
-@media (max-width: 776px) {
+@media (max-width: 767px) {
     #fotocc {
         display: flex;
         width: 100%;
@@ -139,7 +102,7 @@
 
 
 /* Nuestros talleres */
-  
+
 .card h5 {
     font-weight: bold;
     text-align: center;
@@ -149,49 +112,99 @@
     text-align: justify;
 }
 
-  /* Fin de nuestros talleres */
+/* Fin de nuestros talleres */
 
+/* Próximos eventos */
 
-.eventos{
+.eventos {
     display: flex;
     flex-direction: row;
     width: 50%;
     box-sizing: border-box;
-    padding: 10px 10px 10px 10px;
     margin-left: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
 }
 
-.fotoseventos{
+
+
+.fotoseventos {
     width: 100%;
 
 }
 
-.eventos > div{
-    display: flex; /* Utiliza flexbox para alinear los elementos en fila */
+.eventos>div {
     justify-content: center;
-    align-items: center; /* Alinea verticalmente los elementos */
+    align-items: center;
+    /* Alinea verticalmente los elementos */
     border: solid black 3px;
-   
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
 }
 
-.imagenevento{
+div.parrafoeventos {
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenevento {
     width: 100%;
 }
 
-.parrafoeventos h2{
+.parrafoeventos h2 {
     text-align: center;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 3vw;
+    font-weight: bolder;
+
 }
 
-.parrafoeventos p{
+.parrafoeventos p {
     text-align: justify;
     padding: 10px 10px 10px 10px;
     background-color: white;
+    font-size: 1.25vw;
+
+
 }
+
+@media (max-width: 767px) {
+    .eventos {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0%;
+        padding: 10px;
+    }
+
+    .parrafoeventos p {
+        text-align: justify;
+        padding: 5px 5px 5px 5px;
+        background-color: white;
+        font-size: 3vw;
+    }
+
+    .parrafoeventos h2 {
+        text-align: center;
+        background-color: #fff;
+        font-size: 3vh;
+        font-weight: bolder;
+        margin-bottom: 0.2rem;
+    }
+
+}
+
+/* Fin de próximos eventos */
+
 /* Inicio Formá parte */
 
 
-.formaparte{
+.formaparte {
     margin-left: 25%;
     justify-content: center;
     border: solid black 3px;
@@ -202,7 +215,7 @@
 }
 
 
-.dejatumensaje{
+.dejatumensaje {
     text-align: center;
     font-size: 10px;
     margin-left: 25%;
@@ -210,25 +223,26 @@
     border: solid black 3px;
     font-size: 30px;
 }
-.label{
+
+.label {
     color: white;
     background-color: #000;
-    width:100%;
+    width: 100%;
     display: flex;
     font-size: 20px;
 }
 
-.input{
+.input {
     color: black;
     background-color: white;
-    width:90%;
+    width: 90%;
     display: flex;
     font-size: 20px;
     border: none;
 
 }
 
-.boton-mensaje{
+.boton-mensaje {
     color: #fff;
     background-color: #000;
     font-size: 15px;
