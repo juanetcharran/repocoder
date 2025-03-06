@@ -207,43 +207,67 @@ div.parrafoeventos {
 .formaparte {
     margin-left: 25%;
     justify-content: center;
-    border: solid black 3px;
     width: 50%;
     background-color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
+    color: black;
 }
 
 
 .dejatumensaje {
-    text-align: center;
-    font-size: 10px;
     margin-left: 25%;
     width: 50%;
-    border: solid black 3px;
     font-size: 30px;
+    font-weight: bold;
+
 }
 
 .label {
-    color: white;
-    background-color: #000;
+    color: black;
+    background-color: white;
     width: 100%;
     display: flex;
     font-size: 20px;
+    font-weight: bold;
+
 }
 
 .input {
     color: black;
     background-color: white;
-    width: 90%;
+    width: 100%;
     display: flex;
     font-size: 20px;
-    border: none;
 
 }
 
-.boton-mensaje {
+.enviar-mensaje {
     color: #fff;
     background-color: #000;
     font-size: 15px;
+    margin-top: 10px;
+}
+
+.red{
+    color: red;
+}
+
+
+@media (max-width: 767px) {
+    .formaparte {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0%;
+        padding: 10px;
+    }
+    .dejatumensaje {
+        margin-left: 0%;
+        width: 100%;
+        font-size: 30px;
+        font-weight: bold;
+        display: none;
+    
+    }
 }

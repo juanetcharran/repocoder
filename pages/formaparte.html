@@ -48,26 +48,29 @@
         <h1 class="generic-tittle">Formá parte</h1>
         <section class="dejatumensaje">
             <div>
-                <p>Deja tu mensaje</p>
+                <p>Dejá tu mensaje</p>
             </div>
         </section>
         <form class="formaparte" method="post" name="Nuevo formulario">
             <div>
-                <div class="label"><label for="name">Nombre y Apellido</label></div>
+                <div class="label"><label for="name">Nombre y Apellido</label><span class="red">*</span></div>
                 <input class="input" type="text" required="required">
             </div>
             <div>
-                <div class="label"><label for="mail">Mail</label></div>
+                <div class="label"><label for="mail">Mail</label><span class="red">*</span></div>
                 <input class="input" type="text" required="required">
             </div>
             <div>
-                <div class="label"><label for="phone">Teléfono</label></div>
+                <div class="label"><label for="phone">Teléfono</label><span class="red">*</span></div>
                 <input class="input" type="text" required="required">
             </div>
             <div>
                 <div class="label"><label for="messaje">Mensaje</label></div>
-                <textarea class="input" type="text" required="required" rows="10"></textarea>
+                <textarea class="input" type="text" rows="10"></textarea>
             </div>
+            <p>
+                (<span class="red">*</span>)Los campos indicados con asterisco rojo son obligatorios.
+            </p>
             <div>
                 <input class="enviar-mensaje" type="submit" value="Enviar Mensaje">
                 </input>
