@@ -1,0 +1,22 @@
+@import 'variable';
+
+footer {
+    display: $primary-display;
+    flex-direction: row;
+    width: 100%;
+    background-color: $primary-color;
+    color: $secondary-color;
+    justify-content: space-between;
+    padding: 10px;
+    div {
+        padding: 10px 10px 10px 10px;
+        div{
+            a {
+                list-style: none;
+                color:$secondary-color;
+                text-decoration: none;
+            }
+
+        }
+    }
+}

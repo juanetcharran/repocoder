@@ -1,0 +1,236 @@
+@charset "UTF-8";
+footer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: black;
+  color: white;
+  justify-content: space-between;
+  padding: 10px;
+}
+footer div {
+  padding: 10px 10px 10px 10px;
+}
+footer div div a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+/*index*/
+.actividades .carousel-item img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* quienes somos */
+#fotocc {
+  max-height: 500px;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.texto-imagen {
+  height: 100%;
+  margin: 0;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.parrafo {
+  font-size: 12px;
+  text-align: justify;
+}
+
+/*hacer una de títulos*/
+.generic-tittle {
+  text-align: center;
+  color: black;
+  font-size: 40px;
+}
+
+.titulo2 {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.separator {
+  border-top: 2px dotted #000;
+  /* Línea punteada de 2px de grosor y color negro */
+  margin: 20px 0;
+  /* Agregar un margen para separarlo de otros elementos */
+}
+
+@media (max-width: 767px) {
+  .texto-imagen {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px;
+  }
+}
+/* fotocc está ok */
+@media (max-width: 767px) {
+  #fotocc {
+    display: flex;
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+/* Nuestros talleres */
+.card h5 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.card p {
+  text-align: justify;
+}
+
+/* Fin de nuestros talleres */
+/* Próximos eventos */
+.eventos {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  box-sizing: border-box;
+  margin-left: 25%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.fotoseventos {
+  width: 100%;
+}
+
+.eventos > div {
+  justify-content: center;
+  align-items: center;
+  /* Alinea verticalmente los elementos */
+  border: solid black 3px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+div.parrafoeventos {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagenevento {
+  width: 100%;
+}
+
+.parrafoeventos h2 {
+  text-align: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 3vw;
+  font-weight: bolder;
+}
+
+.parrafoeventos p {
+  text-align: justify;
+  padding: 10px 10px 10px 10px;
+  background-color: white;
+  font-size: 1.25vw;
+}
+
+@media (max-width: 767px) {
+  .eventos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px;
+  }
+  .parrafoeventos p {
+    text-align: justify;
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    font-size: 3vw;
+  }
+  .parrafoeventos h2 {
+    text-align: center;
+    background-color: white;
+    font-size: 3vh;
+    font-weight: bolder;
+    margin-bottom: 0.2rem;
+  }
+}
+/* Fin de próximos eventos */
+/* Inicio Formá parte */
+/*ver como queda*/
+.formaparte {
+  color: black;
+  background-color: white;
+  display: inherit;
+  margin-left: 25%;
+  justify-content: center;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dejatumensaje {
+  margin-left: 25%;
+  width: 50%;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.label {
+  color: black;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input {
+  color: black;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  font-size: 20px;
+}
+
+.enviar-mensaje {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.red {
+  color: red;
+}
+
+@media (max-width: 767px) {
+  .formaparte {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0%;
+    padding: 10px;
+  }
+  .dejatumensaje {
+    margin-left: 0%;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

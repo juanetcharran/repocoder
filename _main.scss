@@ -1,49 +1,26 @@
+@import 'variable';
+
+@mixin font-bg($color, $background-color, $display) {
+    color: $color;
+    background-color: $background-color;
+    display: $display;
+}
+
+
+/*index*/
+
 .actividades .carousel-item img {
     max-height: 500px;
     width: 100%;
     object-fit: cover;
 }
 
-
-/* h1 para todos los html */
-
-.generic-tittle {
-    text-align: center;
-    color: black padding-top 30px;
-    font-size: 40px;
-}
-
-
-/* footer */
-
-.footer {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    background-color: black;
-    color: white;
-    justify-content: space-between;
-    padding: 10px;
-}
-
-.icons {
-    list-style: none;
-    color: white;
-    text-decoration: none;
-}
-
-.redes {
-    padding: 10px 10px 10px 10px;
-}
-
-/* fin del footer */
-
 /* quienes somos */
 
 #fotocc {
     max-height: 500px;
     object-fit: cover;
-    display: flex;
+    display: $primary-display;
     justify-content: center;
     align-items: center;
     width: 50%;
@@ -52,24 +29,28 @@
 
 .texto-imagen {
     height: 100%;
-    /* Asegura que el body ocupe toda la altura de la pantalla */
     margin: 0;
-    /* Elimina los márgenes predeterminados */
     width: 50%;
-    /* La imagen ocupa el 50% del ancho de la pantalla */
     margin-left: 25%;
 }
 
 .parrafo {
     font-size: 12px;
-    text-align: justify;
+    text-align: $secondary-align;
+}
+
+/*hacer una de títulos*/
+
+.generic-tittle {
+    text-align: $primary-align;
+    color: $primary-color;
+    font-size: $primary-size;
 }
 
 .titulo2 {
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: $secondary-size;
     font-weight: bold;
-
 }
 
 .separator {
@@ -79,11 +60,9 @@
     /* Agregar un margen para separarlo de otros elementos */
 }
 
-/* logro que ocupe la totalidad de la pantalla horizontal para mobile */
-
 @media (max-width: 767px) {
     .texto-imagen {
-        display: flex;
+        display: $primary-display;
         flex-direction: column;
         width: 100%;
         margin-left: 0%;
@@ -94,22 +73,20 @@
 /* fotocc está ok */
 @media (max-width: 767px) {
     #fotocc {
-        display: flex;
+        display: $primary-display;
         width: 100%;
         margin-left: 0%;
     }
 }
-
-
 /* Nuestros talleres */
 
 .card h5 {
     font-weight: bold;
-    text-align: center;
+    text-align: $primary-align;
 }
 
 .card p {
-    text-align: justify;
+    text-align: $secondary-align;
 }
 
 /* Fin de nuestros talleres */
@@ -117,7 +94,7 @@
 /* Próximos eventos */
 
 .eventos {
-    display: flex;
+    display: $primary-display;
     flex-direction: row;
     width: 50%;
     box-sizing: border-box;
@@ -140,13 +117,13 @@
     /* Alinea verticalmente los elementos */
     border: solid black 3px;
     width: 100%;
-    display: grid;
+    display: $secondary-display;
     grid-template-columns: 1fr 2fr;
 
 }
 
 div.parrafoeventos {
-    display: flex;
+    display: $primary-display;
     flex-direction: column;
 }
 
@@ -155,9 +132,9 @@ div.parrafoeventos {
 }
 
 .parrafoeventos h2 {
-    text-align: center;
-    background-color: #fff;
-    display: flex;
+    text-align: $primary-align;
+    background-color: $secondary-color;
+    display: $primary-display;
     flex-direction: column;
     font-size: 3vw;
     font-weight: bolder;
@@ -165,9 +142,9 @@ div.parrafoeventos {
 }
 
 .parrafoeventos p {
-    text-align: justify;
+    text-align: $secondary-align;
     padding: 10px 10px 10px 10px;
-    background-color: white;
+    background-color: $secondary-color;
     font-size: 1.25vw;
 
 
@@ -175,7 +152,7 @@ div.parrafoeventos {
 
 @media (max-width: 767px) {
     .eventos {
-        display: flex;
+        display: $primary-display;
         flex-direction: column;
         width: 100%;
         margin-left: 0%;
@@ -183,15 +160,15 @@ div.parrafoeventos {
     }
 
     .parrafoeventos p {
-        text-align: justify;
+        text-align: $secondary-align;
         padding: 5px 5px 5px 5px;
-        background-color: white;
+        background-color: $secondary-color;
         font-size: 3vw;
     }
 
     .parrafoeventos h2 {
-        text-align: center;
-        background-color: #fff;
+        text-align: $primary-align;
+        background-color: $secondary-color;
         font-size: 3vh;
         font-weight: bolder;
         margin-bottom: 0.2rem;
@@ -200,18 +177,17 @@ div.parrafoeventos {
 }
 
 /* Fin de próximos eventos */
-
 /* Inicio Formá parte */
 
 
+/*ver como queda*/
 .formaparte {
+    @include font-bg($primary-color, $secondary-color, inherit);
     margin-left: 25%;
     justify-content: center;
     width: 50%;
-    background-color: #fff;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: black;
 }
 
 
@@ -224,27 +200,21 @@ div.parrafoeventos {
 }
 
 .label {
-    color: black;
-    background-color: white;
+    @include font-bg($primary-color, $secondary-color, $primary-display);
     width: 100%;
-    display: flex;
     font-size: 20px;
     font-weight: bold;
-
 }
 
 .input {
-    color: black;
-    background-color: white;
+    @include font-bg($primary-color, $secondary-color, $primary-display);
     width: 100%;
-    display: flex;
     font-size: 20px;
-
 }
 
 .enviar-mensaje {
-    color: #fff;
-    background-color: #000;
+    color: $secondary-color;
+    background-color: $primary-color;
     font-size: 15px;
     margin-top: 10px;
 }
@@ -256,7 +226,7 @@ div.parrafoeventos {
 
 @media (max-width: 767px) {
     .formaparte {
-        display: flex;
+        display: $primary-display;
         flex-direction: column;
         width: 100%;
         margin-left: 0%;
