@@ -18,6 +18,8 @@ footer div div a {
 }
 
 /*index*/
+
+
 .actividades .carousel-item img {
   max-height: 500px;
   width: 100%;
@@ -231,6 +233,22 @@ div.parrafoeventos {
     font-weight: bold;
     display: none;
   }
+}
+@keyframes rotar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+#logo {
+  animation: rotar 10s linear infinite;
+  transition: animation-duration 0.3s ease-in-out;
+}
+
+#logo:hover {
+  animation-duration: 2s;
 }
 
 /*# sourceMappingURL=style.css.map */
