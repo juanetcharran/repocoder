@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centro Cultural No Me Olvides</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -15,7 +15,7 @@
     <header>
         <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
-                <img src="./images/logo2.png" width="30" height="30" alt="Logo no me Olvides">
+                <img id="logo" src="./images/logo2.png" width="30" height="30" alt="Logo no me Olvides">
                 <a class="navbar-brand" href="./index.html">No Me Olvides</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -61,35 +61,37 @@
                 </div>
             </div>
         </section>
-        <section class="row">
-            <div class="col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">¿Cómo llegar?</h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Entre Rios 967</li>
-                        <li class="list-group-item">Estación Entre Ríos Línea E</li>
-                        <li class="list-group-item">Líneas de Colectivo: 53, 126, 37, 12</li>
-                    </ul>
-                    <div class="card-body">
-                        <a href="https://www.google.com/maps/place/Av.+Entre+R%C3%ADos+967,+C1080ABD+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.619776,-58.3964162,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccadf8222f683:0xbd8847dc06789f22!8m2!3d-34.6197805!4d-58.3918028!16s%2Fg%2F11c5pr6v12?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D"
-                            target="_blank" class="card-link">Encontranos</a>
+        <section class="container-fluid g-0">
+            <div class="row g-0">
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">¿Cómo llegar?</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Entre Rios 967</li>
+                            <li class="list-group-item">Estación Entre Ríos Línea E</li>
+                            <li class="list-group-item">Líneas de Colectivo: 53, 126, 37, 12</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="https://www.google.com/maps/place/Av.+Entre+R%C3%ADos+967,+C1080ABD+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.619776,-58.3964162,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccadf8222f683:0xbd8847dc06789f22!8m2!3d-34.6197805!4d-58.3918028!16s%2Fg%2F11c5pr6v12?entry=ttu&g_ep=EgoyMDI1MDIyNi4xIKXMDSoASAFQAw%3D%3D"
+                                target="_blank" class="card-link">Encontranos</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Horarios de Atención</h5>
-                    </div>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Lunes de 15 a 17 hs</li>
-                        <li class="list-group-item">Miércoles de 13 a 15 hs</li>
-                        <li class="list-group-item">Viernes de 19 a 21 hs</li>
-                    </ul>
-                    <div class="card-body">
-                        <a target="_blank" href="tel:+5491155555555">115555-5555</a>
+                <div class="col-md-6 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Horarios de Atención</h5>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Lunes de 15 a 17 hs</li>
+                            <li class="list-group-item">Miércoles de 13 a 15 hs</li>
+                            <li class="list-group-item">Viernes de 19 a 21 hs</li>
+                        </ul>
+                        <div class="card-body">
+                            <a target="_blank" href="tel:+5491155555555">115555-5555</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,10 +104,10 @@
                     <i class="fab fa-facebook"></i> <!-- Ícono de Facebook -->
                 </a><span>CCnomeolvides</span></div>
             <div><a class="icons" href="https://www.instagram.com/CCnomeolvides/" target="_blank">
-                    <i class="fab fa-instagram"></i> 
+                    <i class="fab fa-instagram"></i>
                 </a><span>CCnomeolvides</span></div>
             <div><a class="icons" href="https://www.x.com/CCnomeolvides/" target="_blank">
-                    <i class="fas fa-times"></i> 
+                <i class="fab fa-twitter"></i>
                 </a><span>@CCnomeolvides</span></div>
         </div>
     </footer>
@@ -113,4 +115,5 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
