@@ -6,7 +6,6 @@
     display: $display;
 }
 
-
 /*index*/
 
 .inicio {
@@ -50,9 +49,7 @@
 /*hacer una de títulos*/
 
 .generic-tittle {
-    text-align: $primary-align;
-    color: $primary-color;
-    font-size: $primary-size;
+    @include font-bg($primary-color, $secondary-color, $primary-display);
 }
 
 .titulo2 {
@@ -111,8 +108,6 @@
     margin-bottom: 1%;
 
 }
-
-
 
 .fotoseventos {
     width: 100%;
