@@ -21,6 +21,13 @@
     width: 100%;
     object-fit: cover;
 }
+.card {
+    text-align: center;
+}
+
+.card-border{
+    border: #000 solid 1px !important;
+}
 
 /* quienes somos */
 
@@ -42,20 +49,25 @@
 }
 
 .parrafo {
-    font-size: 12px;
+    font-size: 1.5rem;
     text-align: $secondary-align;
 }
 
 /*hacer una de títulos*/
 
 .generic-tittle {
-    @include font-bg($primary-color, $secondary-color, $primary-display);
+    @include font-bg($primary-color, $secondary-color, inherit);
+    text-align: center;
 }
 
 .titulo2 {
     text-transform: capitalize;
-    font-size: $secondary-size;
+    font-size: 2 rem;
     font-weight: bold;
+}
+
+.preguntas {
+    padding: 10px;
 }
 
 .separator {
@@ -231,8 +243,8 @@ div.parrafoeventos {
     .formaparte {
         display: $primary-display;
         flex-direction: column;
-        width: 100%;
-        margin-left: 0%;
+        width: 80%;
+        margin: 0 auto;
         padding: 10px;
     }
     .dejatumensaje {
